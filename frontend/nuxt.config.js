@@ -1,3 +1,5 @@
+const path = require('path')
+
 export default {
   loading: {
     color: 'red',
@@ -77,12 +79,12 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/scss/tailwind.scss'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['~plugins/filters'],
+  plugins: ['~plugins/filters', '~plugins/vue-tailwind'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -100,10 +102,16 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/axios', '@nuxtjs/auth'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/auth', 'nuxt-purgecss'],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    extractCSS: true,
+    postcss: {
+      plugins: { tailwindcss: path.resolve(__dirname, './tailwind.config.js') },
+    },
+  },
+  purgeCSS: { mode: 'postcss' },
 }

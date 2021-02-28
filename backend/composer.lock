@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05668a6a76418f9701cc02ae059732e6",
+    "content-hash": "ca83bfba8399398edd4fae17b05aa14e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2513,6 +2513,50 @@
                 }
             ],
             "time": "2020-07-28T16:51:01+00:00"
+        },
+        {
+            "name": "scriptburn/simple-debug",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scriptburn/simple-debug.git",
+                "reference": "7606a494eac37235c9bfce8dc4bd6367726a84da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scriptburn/simple-debug/zipball/7606a494eac37235c9bfce8dc4bd6367726a84da",
+                "reference": "7606a494eac37235c9bfce8dc4bd6367726a84da",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Rajneesh ojha",
+                    "email": "contact@scriptburn.com"
+                }
+            ],
+            "description": "A package to implement few simple debug functions",
+            "keywords": [
+                "cache",
+                "http"
+            ],
+            "support": {
+                "issues": "https://github.com/scriptburn/simple-debug/issues",
+                "source": "https://github.com/scriptburn/simple-debug/tree/master"
+            },
+            "time": "2017-07-05T17:58:51+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -8252,7 +8296,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.4"
+        "php": "^7.3"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
